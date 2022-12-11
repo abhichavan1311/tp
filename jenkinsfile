@@ -1,0 +1,17 @@
+pipeline {
+	agent {
+		label {
+			label 'master'
+			customWorksspace '/mnt/project/multibranch'
+		}
+	}
+	
+	stages {
+		stage ('stage-1') {
+			steps {
+				touch 'abhi'
+			}
+		}
+	
+	}
+}
