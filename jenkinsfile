@@ -9,7 +9,7 @@ pipeline {
 	stages {
 		stage ('stage-1') {
 			steps {
-				touch 'abhi'
+				sh "sudo mkdir 1 "
 			}
 		}
 	
